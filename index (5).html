@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wamboi Beauty Studio &amp; Training Centre | Kitale</title>
+<meta name="description" content="Lashes, nails, makeup, facials, waxing, massage and eyebrows in Kitale. Practical beauty training. Book on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121011;--bg2:#1b1819;--gold:#d4b483;--gold2:#f1dfb8;--blush:#e8c4c4;--cream:#f7f0e6;--mut:#b9aea4;--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--cream);font:300 16px/1.7 Jost,sans-serif}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600;line-height:1.15}
+a{color:inherit}img{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{width:min(1120px,92%);margin:auto}
+section{padding:84px 0}
+.sec-h{text-align:center;margin-bottom:44px}
+.sec-h h2{font-size:clamp(2rem,5vw,3rem)}
+.sec-h p{color:var(--mut);max-width:520px;margin:10px auto 0}
+.flour{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px;color:var(--gold)}
+.flour i{width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.flour i:last-child{transform:scaleX(-1)}
+.btn{display:inline-block;padding:13px 28px;border-radius:99px;border:1px solid var(--gold);font:500 .95rem Jost,sans-serif;text-decoration:none;cursor:pointer;transition:.25s;background:none;color:var(--cream)}
+.btn.gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1a1410;border-color:transparent}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(212,180,131,.25)}
+.chip{font-size:.68rem;background:rgba(232,196,196,.15);color:var(--blush);border-radius:99px;padding:2px 9px;margin-left:6px;vertical-align:middle}
+/* nav */
+nav{position:fixed;inset:0 0 auto;z-index:50;transition:.3s;background:rgba(18,16,17,.35);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+nav.solid{background:#121011;box-shadow:0 4px 24px rgba(0,0,0,.5)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:700 1.7rem 'Cormorant Garamond',serif;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:50%;width:44px;height:44px;display:grid;place-items:center}
+.links{display:flex;gap:24px;list-style:none;align-items:center}
+.links a{text-decoration:none;font-size:.92rem;opacity:.85}.links a:hover{color:var(--gold);opacity:1}
+.burger{display:none;background:none;border:0;color:var(--cream);width:44px;height:44px;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:currentColor;margin:5px auto;transition:.3s}
+@media(max-width:900px){.burger{display:block}
+.links{position:fixed;inset:68px 0 auto;flex-direction:column;background:#121011;padding:24px 0;gap:18px;transform:translateY(-130%);transition:.35s;visibility:hidden}
+.links.open{transform:none;visibility:visible}}
+/* hero */
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;padding:110px 0 80px;background:linear-gradient(160deg,#2a2022,#121011)}
+.hero .bg{position:absolute;inset:0;background:url(photos/hero.jpg) center/cover;animation:kb 22s ease-in-out infinite alternate}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,16,17,.7),rgba(18,16,17,.55) 50%,var(--bg))}
+.hero .wrap{position:relative;z-index:2}
+@keyframes kb{to{transform:scale(1.15) translate(-1.5%,-1%)}}
+.hero small{letter-spacing:.2em;color:var(--blush);font-size:.85rem}
+.hero h1{font-size:clamp(2.6rem,8vw,5.6rem);margin:14px 0;background:linear-gradient(100deg,var(--gold) 20%,#fff6dc 45%,var(--gold) 70%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 6s linear infinite}
+@keyframes sh{to{background-position:-220% 0}}
+.hero p{font:italic 500 clamp(1.2rem,3vw,1.6rem) 'Cormorant Garamond',serif;color:var(--gold2);margin-bottom:34px}
+.hero .ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.scroll{position:absolute;bottom:22px;left:50%;z-index:2;width:24px;height:40px;border:1.5px solid var(--gold);border-radius:14px;transform:translateX(-50%)}
+.scroll:after{content:"";position:absolute;left:50%;top:7px;width:3px;height:8px;margin-left:-1.5px;border-radius:2px;background:var(--gold);animation:dot 1.8s infinite}
+@keyframes dot{60%{transform:translateY(14px);opacity:0}}
+/* stats */
+.stats{padding:44px 0;background:var(--bg2);border-block:1px solid rgba(212,180,131,.2)}
+.stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:24px;text-align:center}
+.stats b{display:block;font:600 2.6rem 'Cormorant Garamond',serif;color:var(--gold)}
+.stats span{color:var(--mut);font-size:.9rem}
+/* services */
+.tabs{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:32px}
+.tabs button{padding:9px 22px;border-radius:99px;border:1px solid rgba(212,180,131,.4);background:none;color:var(--cream);font:400 .9rem Jost;cursor:pointer;transition:.25s}
+.tabs button[aria-pressed=true]{background:var(--gold);color:#1a1410}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
+.card{background:var(--bg2);border-radius:var(--r);overflow:hidden;box-shadow:0 2px 4px rgba(0,0,0,.3),0 14px 34px rgba(0,0,0,.35);transition:transform .3s,opacity .35s;border:1px solid rgba(212,180,131,.1)}
+.card:hover{transform:translateY(-8px)}
+.card.hide{opacity:0;transform:scale(.92);pointer-events:none;position:absolute;visibility:hidden}
+.card .im{aspect-ratio:4/3;background:linear-gradient(135deg,#3a2a2e,#1b1819)}
+.card img{width:100%;height:100%;object-fit:cover}
+.card div.t{padding:20px 22px 24px}
+.card svg{width:26px;height:26px;stroke:var(--gold);fill:none;stroke-width:1.5;margin-bottom:6px}
+.card h3{font-size:1.5rem}.card p{color:var(--mut);font-size:.92rem}
+/* training */
+.train{background:var(--bg2)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+@media(max-width:820px){.split{grid-template-columns:1fr}}
+.split .pic{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:linear-gradient(135deg,#3a2a2e,#121011);box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.split .pic img{width:100%;height:100%;object-fit:cover}
+.split h2{font-size:clamp(2rem,4.6vw,2.9rem);margin-bottom:14px}
+.courses{list-style:none;margin:22px 0}
+.courses li{padding:14px 0;border-bottom:1px solid rgba(212,180,131,.2);font:600 1.3rem 'Cormorant Garamond',serif}
+.ben{display:grid;gap:8px;margin-bottom:28px;list-style:none;color:var(--mut)}
+.ben li:before{content:"\2726";color:var(--gold);margin-right:10px}
+/* gallery */
+.mas{columns:3 220px;gap:14px}
+.mas button{display:block;width:100%;margin-bottom:14px;border:0;padding:0;border-radius:14px;overflow:hidden;cursor:zoom-in;background:linear-gradient(135deg,#3a2a2e,#1b1819);break-inside:avoid}
+.mas img{width:100%;transition:transform .5s}.mas button:hover img{transform:scale(1.06)}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(8,6,7,.94);display:none;place-items:center;padding:20px}
+.lb.on{display:grid}
+.lb img{max-height:82vh;border-radius:12px}
+.lb button{position:absolute;background:none;border:0;color:var(--gold2);font-size:2.4rem;cursor:pointer;width:52px;height:52px}
+.lb .x{top:14px;right:14px}.lb .p{left:10px}.lb .n{right:10px}
+/* reviews */
+.rev{max-width:720px;margin:auto;text-align:center;position:relative}
+.slides{position:relative;min-height:230px}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity .6s;padding:0 44px}
+.slide.on{opacity:1}
+.stars{color:var(--gold);letter-spacing:5px;font-size:1.2rem}
+.slide p{font:italic 500 clamp(1.3rem,3vw,1.7rem) 'Cormorant Garamond',serif;margin:14px 0}
+.slide span{color:var(--mut)}
+.rev .ar{position:absolute;top:80px;background:none;border:0;color:var(--gold);font-size:2rem;cursor:pointer;width:44px;height:44px}
+.rev .l{left:-10px}.rev .r{right:-10px}
+.dots{display:flex;gap:10px;justify-content:center;margin-top:12px}
+.dots button{width:11px;height:11px;border-radius:50%;border:1px solid var(--gold);background:none;cursor:pointer;padding:0}
+.dots button[aria-current=true]{background:var(--gold)}
+/* faq */
+.faq{max-width:760px;margin:auto}
+.qa{border-bottom:1px solid rgba(212,180,131,.2)}
+.qa button{width:100%;text-align:left;background:none;border:0;color:var(--cream);font:600 1.35rem 'Cormorant Garamond',serif;padding:20px 40px 20px 0;cursor:pointer;position:relative}
+.qa button:after{content:"+";position:absolute;right:6px;color:var(--gold);transition:.3s}
+.qa button[aria-expanded=true]:after{transform:rotate(45deg)}
+.qa .a{max-height:0;overflow:hidden;transition:max-height .4s;color:var(--mut)}
+.qa .a p{padding-bottom:20px}
+/* contact */
+.contact{background:var(--bg2)}
+form{max-width:640px;margin:auto;display:grid;gap:16px;grid-template-columns:1fr 1fr}
+form .f{grid-column:1/-1}.half{grid-column:span 1}
+@media(max-width:560px){.half{grid-column:1/-1}}
+label{display:block;font-size:.85rem;color:var(--mut);margin-bottom:5px}
+input,select,textarea{width:100%;padding:13px 16px;border-radius:12px;border:1px solid rgba(212,180,131,.3);background:var(--bg);color:var(--cream);font:300 1rem Jost}
+input:invalid.t,select:invalid.t{border-color:#e08a8a}
+.err{color:#e8a0a0;font-size:.8rem;min-height:1em}
+.loc{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+@media(max-width:760px){.loc{grid-template-columns:1fr}}
+.map{aspect-ratio:16/10;border-radius:var(--r);background:repeating-linear-gradient(45deg,#201c1d,#201c1d 14px,#1b1819 14px,#1b1819 28px);display:grid;place-items:center;text-align:center;color:var(--mut);border:1px solid rgba(212,180,131,.2)}
+.map svg{width:44px;stroke:var(--gold);fill:none;stroke-width:1.6}
+.loc h3{font-size:1.9rem;margin-bottom:8px}.loc .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+/* footer */
+footer{padding:54px 0 30px;border-top:1px solid rgba(212,180,131,.2)}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px}
+footer h4{font:600 1.2rem 'Cormorant Garamond',serif;color:var(--gold);margin-bottom:10px}
+footer ul{list-style:none;color:var(--mut);font-size:.92rem}footer a{text-decoration:none}footer a:hover{color:var(--gold)}
+.soc{display:flex;gap:12px}.soc a{width:42px;height:42px;border:1px solid rgba(212,180,131,.4);border-radius:50%;display:grid;place-items:center}
+.soc svg{width:19px;fill:var(--gold)}
+.copy{text-align:center;color:var(--mut);font-size:.82rem;margin-top:36px}
+.toast{position:fixed;bottom:26px;left:50%;transform:translate(-50%,120px);background:var(--gold);color:#1a1410;padding:12px 24px;border-radius:99px;z-index:200;transition:.4s;font-weight:500}
+.toast.on{transform:translate(-50%,0)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav id="nav"><div class="wrap nav">
+<a class="logo" href="#home" aria-label="Wamboi Beauty Studio home">WB</a>
+<ul class="links" id="links">
+<li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#training">Training</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li>
+<li><a class="btn gold" href="#contact" style="padding:9px 22px;opacity:1">Book Now</a></li>
+</ul>
+<button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="links"><span></span><span></span><span></span></button>
+</div></nav>
+
+<header class="hero" id="home">
+<div class="bg" role="img" aria-label="Soft-lit beauty studio interior"></div><!-- PLACEHOLDER: replace with real salon photo, e.g. photos/wamboi-hero.jpg -->
+<div class="wrap">
+<small>KITALE &middot; MOI AVENUE</small>
+<h1>Wamboi Beauty Studio &amp; Training Centre</h1>
+<p>Enhancing Natural and Artificial Beauty</p>
+<div class="ctas"><a class="btn gold" href="https://wa.me/254759838018" target="_blank" rel="noopener">Book on WhatsApp</a><a class="btn" href="#services">View Services</a></div>
+</div>
+<span class="scroll" aria-hidden="true"></span>
+</header>
+
+<div class="stats"><div class="wrap">
+<div><b data-n="139" data-s="+">0</b><span>Instagram posts</span></div>
+<div><b data-n="1000" data-s="+">0</b><span>Happy clients <i class="chip">Sample</i></span></div>
+<div><b data-n="6" data-s="+">0</b><span>Services</span></div>
+<div><b data-n="100" data-s="%">0</b><span>Hands-on training</span></div>
+</div></div>
+
+<section id="services"><div class="wrap">
+<div class="sec-h rv"><h2>Services</h2><p>From a quick brow shape to full bridal glam, done by hand in Kitale.</p><div class="flour"><i></i>&#10022;<i></i></div></div>
+<div class="tabs" role="group" aria-label="Filter services">
+<button aria-pressed="true" data-f="all">All</button><button aria-pressed="false" data-f="face">Face</button><button aria-pressed="false" data-f="nails">Nails</button><button aria-pressed="false" data-f="body">Body</button></div>
+<div class="grid" id="sg">
+<!-- PLACEHOLDER: replace with real salon photo, e.g. photos/wamboi-lashes-01.jpg -->
+<article class="card rv" data-c="face"><div class="im"><img loading="lazy" src="photos/lashes.jpg" alt="Lash extensions being applied"></div><div class="t"><svg viewBox="0 0 24 24"><path d="M2 12c4-6 16-6 20 0M5 14l-1 3M9 15l-.5 3M15 15l.5 3M19 14l1 3"/></svg><h3>Lashes</h3><p>Classic, hybrid and volume sets, applied one lash at a time.</p></div></article>
+<!-- PLACEHOLDER: replace with real salon photo, e.g. photos/wamboi-nails-01.jpg -->
+<article class="card rv" data-c="nails"><div class="im"><img loading="lazy" src="photos/nails.jpg" alt="Gel and acrylic nails"></div><div class="t"><svg viewBox="0 0 24 24"><rect x="8" y="3" width="8" height="12" rx="4"/><path d="M6 21h12"/></svg><h3>Nails</h3><p>Gel, acrylics, manicure and pedicure. Plain, french or full art.</p></div></article>
+<!-- PLACEHOLDER: replace with real salon photo, e.g. photos/wamboi-makeup-01.jpg -->
+<article class="card rv" data-c="face"><div class="im"><img loading="lazy" src="photos/makeup.jpg" alt="Makeup artist at work"></div><div class="t"><svg viewBox="0 0 24 24"><path d="M9 3h6v8H9zM8 11h8v10H8z"/></svg><h3>Makeup</h3><p>Soft day looks and full evening glam, matched to your skin tone.</p></div></article>
+<!-- PLACEHOLDER: replace with real salon photo, e.g. photos/wamboi-facials-01.jpg -->
+<article class="card rv" data-c="face"><div class="im"><img loading="lazy" src="photos/facials.jpg" alt="Facial treatment"></div><div class="t"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 14c2 2 6 2 8 0M9 9h.01M15 9h.01"/></svg><h3>Facials</h3><p>Deep cleanse, exfoliation and hydration for skin that glows.</p></div></article>
+<!-- PLACEHOLDER: replace with real salon photo, e.g. photos/wamboi-waxing-01.jpg -->
+<article class="card rv" data-c="body"><div class="im"><img loading="lazy" src="photos/waxing.jpg" alt="Waxing treatment room"></div><div class="t"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 5 6 5 9a5 5 0 0 1-10 0c0-3 2-5 5-9z"/></svg><h3>Waxing</h3><p>Clean, quick hair removal with gentle aftercare.</p></div></article>
+<!-- PLACEHOLDER: replace with real salon photo, e.g. photos/wamboi-massage-01.jpg -->
+<article class="card rv" data-c="body"><div class="im"><img loading="lazy" src="photos/massage.jpg" alt="Relaxing massage"></div><div class="t"><svg viewBox="0 0 24 24"><path d="M3 15c3-4 6 4 9 0s6 4 9 0M3 9c3-4 6 4 9 0s6 4 9 0"/></svg><h3>Massage</h3><p>Slow, firm pressure to unwind tight shoulders and tired legs.</p></div></article>
+<!-- PLACEHOLDER: replace with real salon photo, e.g. photos/wamboi-eyebrows-01.jpg -->
+<article class="card rv" data-c="face"><div class="im"><img loading="lazy" src="photos/eyebrows.jpg" alt="Eyebrow shaping and tinting"></div><div class="t"><svg viewBox="0 0 24 24"><path d="M3 14c4-7 14-7 18-2M3 19h18"/></svg><h3>Eyebrows</h3><p>Shaping and tinting that frames your face and lasts.</p></div></article>
+<!-- PLACEHOLDER: replace with real salon photo, e.g. photos/wamboi-bridal-01.jpg -->
+<article class="card rv" data-c="face"><div class="im"><img loading="lazy" src="photos/bridal.jpg" alt="Bridal glam makeup"></div><div class="t"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 6H21l-5 4 2 7-6-4-6 4 2-7-5-4h6.5z"/></svg><h3>Bridal Glam</h3><p>Trial and wedding-day makeup, lashes and brows in one booking.</p></div></article>
+</div>
+<p style="text-align:center;margin-top:22px;color:var(--mut);font-size:.85rem">Prices on request via WhatsApp <i class="chip">Sample: add price list</i></p>
+</div></section>
+
+<section class="train" id="training"><div class="wrap split">
+<div class="pic rv"><!-- PLACEHOLDER: replace with real salon photo, e.g. photos/wamboi-training-01.jpg --><img loading="lazy" src="photos/training.jpg" alt="Students practising lash application in class"></div>
+<div class="rv">
+<h2>Learn the craft, hands on</h2>
+<p style="color:var(--mut)">Our training centre is practical from day one. You work on real models, not just theory.</p>
+<ul class="courses"><li>Lash Extension Training</li><li>Eyebrow Shaping &amp; Tinting Class</li><li>Hands-on Student Sessions</li></ul>
+<ul class="ben"><li>Practical sessions with live models</li><li>Starter guidance to begin earning</li><li>Certificate on completion</li></ul>
+<a class="btn gold" href="https://wa.me/254759838018?text=Hi%20Wamboi%2C%20I%27d%20like%20to%20enroll%20for%20training." target="_blank" rel="noopener">Enroll via WhatsApp</a>
+</div></div></section>
+
+<section id="gallery"><div class="wrap">
+<div class="sec-h rv"><h2>Gallery</h2><p>A look at the work. <i class="chip">Sample images</i></p><div class="flour"><i></i>&#10022;<i></i></div></div>
+<!-- PLACEHOLDER: replace each with real salon photos, e.g. photos/wamboi-gallery-01.jpg -->
+<div class="mas" id="mas">
+<button aria-label="Open image 1"><img loading="lazy" src="photos/gallery-01.jpg" alt="Lash set close-up"></button>
+<button aria-label="Open image 2"><img loading="lazy" src="photos/gallery-02.jpg" alt="Acrylic nails in blush tones"></button>
+<button aria-label="Open image 3"><img loading="lazy" src="photos/gallery-03.jpg" alt="Evening makeup look"></button>
+<button aria-label="Open image 4"><img loading="lazy" src="photos/gallery-04.jpg" alt="Bridal makeup trial"></button>
+<button aria-label="Open image 5"><img loading="lazy" src="photos/gallery-05.jpg" alt="Brow tint before and after"></button>
+<button aria-label="Open image 6"><img loading="lazy" src="photos/gallery-06.jpg" alt="Studio interior"></button>
+<button aria-label="Open image 7"><img loading="lazy" src="photos/gallery-07.jpg" alt="Pedicure session"></button>
+<button aria-label="Open image 8"><img loading="lazy" src="photos/gallery-08.jpg" alt="Training class in session"></button>
+</div></div></section>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer"><button class="x" aria-label="Close">&times;</button><button class="p" aria-label="Previous">&#8249;</button><img alt=""><button class="n" aria-label="Next">&#8250;</button></div>
+
+<section class="train" id="reviews"><div class="wrap">
+<div class="sec-h rv"><h2>Kind words</h2><p><i class="chip">Sample reviews: replace with real ones</i></p><div class="flour"><i></i>&#10022;<i></i></div></div>
+<div class="rev" id="rev" aria-roledescription="carousel" aria-label="Client reviews">
+<div class="slides">
+<div class="slide on"><div class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>My lashes lasted a full month and still looked neat.</p><span>Achieng, Kitale</span></div>
+<div class="slide"><div class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Calm studio, clean tools, and my nails came out perfect.</p><span>Wanjiru, Kitale</span></div>
+<div class="slide"><div class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Did my bridal makeup and it held through the whole day.</p><span>Cheptoo, Kitale</span></div>
+<div class="slide"><div class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>The brow class was practical. I left able to do it myself.</p><span>Naliaka, Kitale</span></div>
+<div class="slide"><div class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Best facial I have had. My skin felt fresh for days.</p><span>Atieno, Kitale</span></div>
+</div>
+<button class="ar l" aria-label="Previous review">&#8249;</button><button class="ar r" aria-label="Next review">&#8250;</button>
+<div class="dots" id="dots"></div>
+</div></div></section>
+
+<section id="faq"><div class="wrap">
+<div class="sec-h rv"><h2>Questions</h2><div class="flour"><i></i>&#10022;<i></i></div></div>
+<div class="faq" id="faq-l">
+<div class="qa"><button aria-expanded="false">How do I book?</button><div class="a"><p>Tap Book on WhatsApp or use the form below. We confirm your slot by message.</p></div></div>
+<div class="qa"><button aria-expanded="false">Do you take walk-ins?</button><div class="a"><p>Yes, when a chair is free. Booking ahead guarantees your time, especially for lashes and bridal.</p></div></div>
+<div class="qa"><button aria-expanded="false">How do I enroll for training?</button><div class="a"><p>Message us on WhatsApp with the course you want. We reply with the next intake and what to bring.</p></div></div>
+<div class="qa"><button aria-expanded="false">Where are you?</button><div class="a"><p>Mama Mombasa Building, opposite Eureka Hotel, Moi Avenue, Kitale.</p></div></div>
+<div class="qa"><button aria-expanded="false">How can I pay?</button><div class="a"><p>Payment options are confirmed when you book. <i class="chip">Sample: add M-Pesa details</i></p></div></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<div class="sec-h rv"><h2>Book your visit</h2><p>Send your details and we continue on WhatsApp.</p><div class="flour"><i></i>&#10022;<i></i></div></div>
+<form id="bf" novalidate>
+<div class="half"><label for="nm">Name</label><input id="nm" required autocomplete="name"><div class="err"></div></div>
+<div class="half"><label for="ph">Phone</label><input id="ph" type="tel" required inputmode="tel" autocomplete="tel" placeholder="07XX XXX XXX"><div class="err"></div></div>
+<div class="half"><label for="sv">Service</label><select id="sv" required><option value="">Choose a service</option><option>Lashes</option><option>Nails</option><option>Makeup</option><option>Facials</option><option>Waxing</option><option>Massage</option><option>Eyebrows</option><option>Bridal Glam</option><option>Training</option></select><div class="err"></div></div>
+<div class="half"><label for="dt">Preferred date</label><input id="dt" type="date"></div>
+<div class="f"><label for="ms">Message (optional)</label><textarea id="ms" rows="3"></textarea></div>
+<div class="f"><button class="btn gold" type="submit" style="width:100%">Continue on WhatsApp</button></div>
+</form>
+</div></section>
+
+<section style="padding:64px 0"><div class="wrap loc">
+<div class="map" role="img" aria-label="Map placeholder"><div><svg viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><p>Map goes here <i class="chip">Sample</i></p></div></div>
+<div><h3>Find us</h3><p style="color:var(--mut)">Mama Mombasa Building, opposite Eureka Hotel, Moi Avenue, Kitale, Kenya</p>
+<div class="btns"><a class="btn" href="tel:+254759838018">Call 0759 838 018</a><a class="btn gold" href="https://wa.me/254759838018" target="_blank" rel="noopener">WhatsApp</a></div></div>
+</div></section>
+
+<footer><div class="wrap">
+<div class="fg">
+<div><a class="logo" href="#home" aria-label="Back to top">WB</a><p style="margin-top:12px;color:var(--mut);font-size:.92rem">Enhancing Natural and Artificial Beauty</p></div>
+<div><h4>Links</h4><ul><li><a href="#services">Services</a></li><li><a href="#training">Training</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Book</a></li></ul></div>
+<div><h4>Hours <i class="chip">Sample</i></h4><ul><li>Mon to Sat: 8:00am to 7:00pm</li><li>Sun: by appointment</li></ul></div>
+<div><h4>Follow</h4><div class="soc">
+<a href="https://instagram.com/wamboi_beauty_studio_training" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.2 6a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/></svg></a>
+<a href="https://facebook.com/Wamboibeautystudioktl" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8h2.7l.5-3.2h-3.2V8.7c0-.9.4-1.7 1.8-1.7h1.5V4.2S15.6 4 14.4 4C11.9 4 10.3 5.5 10.3 8.2v2.6H7.5V14h2.8v8z"/></svg></a>
+<a href="https://tiktok.com/@wamboibeautystudioktl" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.6 2h-3.3v13.4a2.9 2.9 0 1 1-2-2.8V9.2a6.2 6.2 0 1 0 5.3 6.2V8.7a7.7 7.7 0 0 0 4.4 1.4V6.8A4.5 4.5 0 0 1 16.6 2z"/></svg></a>
+</div></div>
+</div>
+<p class="copy">&copy; <span id="yr"></span> Wamboi Beauty Studio &amp; Training Centre, Kitale</p>
+</div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite">Opening WhatsApp&hellip;</div>
+
+<script>
+(function(){
+var $=function(s,c){return(c||document).querySelector(s)},$$=function(s,c){return[].slice.call((c||document).querySelectorAll(s))};
+var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+$('#yr').textContent=new Date().getFullYear();
+/* nav */
+var nav=$('#nav'),bg=$('#burger'),lk=$('#links');
+function sc(){nav.classList.toggle('solid',scrollY>40)}sc();addEventListener('scroll',sc,{passive:true});
+bg.onclick=function(){var o=lk.classList.toggle('open');bg.setAttribute('aria-expanded',o)};
+$$('a',lk).forEach(function(a){a.onclick=function(){lk.classList.remove('open');bg.setAttribute('aria-expanded','false')}});
+/* reveal + counters */
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var t=e.target,sib=t.parentNode.children;t.style.transitionDelay=([].indexOf.call(sib,t)%4*90)+'ms';t.classList.add('in');io.unobserve(t)}})},{threshold:.12});
+$$('.rv').forEach(function(el){io.observe(el)});
+var co=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;co.unobserve(e.target);var el=e.target,n=+el.dataset.n,s=el.dataset.s,t0=null;
+if(rm){el.textContent=n.toLocaleString()+s;return}
+(function f(t){t0=t0||t;var p=Math.min((t-t0)/1500,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3))).toLocaleString()+s;if(p<1)requestAnimationFrame(f)})(performance.now())})},{threshold:.6});
+$$('[data-n]').forEach(function(el){co.observe(el)});
+/* filter */
+$$('.tabs button').forEach(function(b){b.onclick=function(){$$('.tabs button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+$$('#sg .card').forEach(function(c){var show=b.dataset.f==='all'||c.dataset.c===b.dataset.f;
+if(show){c.style.display='';requestAnimationFrame(function(){c.classList.remove('hide')})}else{c.classList.add('hide');setTimeout(function(){if(c.classList.contains('hide'))c.style.display='none'},rm?0:350)}})}});
+/* img fallback */
+$$('img').forEach(function(i){i.onerror=function(){i.style.opacity=0}});
+/* lightbox */
+var lb=$('#lb'),li=$('img',lb),gi=$$('#mas img'),ix=0,last;
+function show(n){ix=(n+gi.length)%gi.length;li.src=gi[ix].src;li.alt=gi[ix].alt}
+gi.forEach(function(g,n){g.parentNode.onclick=function(){last=this;show(n);lb.classList.add('on');$('.x',lb).focus()}});
+function close(){lb.classList.remove('on');if(last)last.focus()}
+$('.x',lb).onclick=close;$('.p',lb).onclick=function(){show(ix-1)};$('.n',lb).onclick=function(){show(ix+1)};
+lb.onclick=function(e){if(e.target===lb)close()};
+addEventListener('keydown',function(e){if(!lb.classList.contains('on'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(ix-1);if(e.key==='ArrowRight')show(ix+1)});
+/* carousel */
+var sl=$$('.slide'),dots=$('#dots'),ci=0,tm;
+sl.forEach(function(_,n){var d=document.createElement('button');d.setAttribute('aria-label','Review '+(n+1));d.onclick=function(){go(n)};dots.appendChild(d)});
+function go(n){ci=(n+sl.length)%sl.length;sl.forEach(function(s,k){s.classList.toggle('on',k===ci)});$$('button',dots).forEach(function(d,k){d.setAttribute('aria-current',k===ci)})}
+go(0);
+function start(){if(!rm)tm=setInterval(function(){go(ci+1)},5000)}function stop(){clearInterval(tm)}
+var rv=$('#rev');rv.onmouseenter=stop;rv.onmouseleave=function(){stop();start()};rv.onfocusin=stop;start();
+$('.l',rv).onclick=function(){go(ci-1)};$('.r',rv).onclick=function(){go(ci+1)};
+/* faq */
+$$('.qa button').forEach(function(b){b.onclick=function(){var open=b.getAttribute('aria-expanded')==='true';
+$$('.qa button').forEach(function(x){x.setAttribute('aria-expanded','false');x.nextElementSibling.style.maxHeight=0});
+if(!open){b.setAttribute('aria-expanded','true');b.nextElementSibling.style.maxHeight=b.nextElementSibling.scrollHeight+'px'}}});
+/* form */
+var f=$('#bf'),toast=$('#toast');
+$('#dt').min=new Date().toISOString().split('T')[0];
+f.onsubmit=function(e){e.preventDefault();var ok=true;
+[['#nm',function(v){return v.trim().length>1},'Enter your name'],['#ph',function(v){return /^(\+?254|0)?[17]\d{8}$/.test(v.replace(/[\s-]/g,''))},'Enter a valid Kenyan phone number'],['#sv',function(v){return!!v},'Choose a service']].forEach(function(r){
+var el=$(r[0]),er=el.parentNode.querySelector('.err'),good=r[1](el.value);er.textContent=good?'':r[2];el.setAttribute('aria-invalid',!good);if(!good){if(ok)el.focus();ok=false}});
+if(!ok)return;
+var m='Hello Wamboi Beauty Studio, I would like to book.\nName: '+$('#nm').value.trim()+'\nPhone: '+$('#ph').value.trim()+'\nService: '+$('#sv').value+($('#dt').value?'\nPreferred date: '+$('#dt').value:'')+($('#ms').value.trim()?'\nMessage: '+$('#ms').value.trim():'');
+toast.classList.add('on');setTimeout(function(){toast.classList.remove('on')},3000);
+window.open('https://wa.me/254759838018?text='+encodeURIComponent(m),'_blank','noopener')};
+})();
+</script>
+</body>
+</html>
